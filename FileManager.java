@@ -36,10 +36,13 @@ public class FileManager implements FileManagerConfig {
 			logger.info("Fast DFS configuration file path:" + fdfsClientConfigFilePath);
 			ClientGlobal.init(fdfsClientConfigFilePath);
 
-			trackerClient = new TrackerClient();
-			trackerServer = trackerClient.getConnection();
+			String classPath = new File(FileManager.class.getResource("/").getFile()).getCanonicalPath();
 
-			storageClient = new StorageClient(trackerServer, storageServer);
+			String fdfsClientConfigFilePath = classPath + File.separator + CLIENT_CONFIG_FILE;
+
+			if(){
+				
+			}
 
 		} catch (Exception e) {
 			logger.error(logger, e);

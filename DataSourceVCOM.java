@@ -11,6 +11,6 @@ public class DataSourceVCOM {
 
 	 public static  Map<String,String> vcomdb = new HashMap<String,String>();
 	 static{
-		 vcomdb.put("tmskw.czbanbantong.com", "");	//用户中心系统测试版
+		 vcomdb.put("tmskw.czbanbantong.com222", "");	//用户中心系统测试版
 	 }
 }

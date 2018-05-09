@@ -38,13 +38,14 @@ public class FileManager implements FileManagerConfig {
 
 			trackerClient = new TrackerClient();
 			trackerServer = trackerClient.getConnection();
-			//hotfix fix bug2
+			//f1
+			trackerClient = new TrackerClient();
 			trackerServer = trackerClient.getConnection();
 
 			String fdfsClientConfigFilePath = classPath + File.separator + CLIENT_CONFIG_FILE;
 
 			if(){
-				//hotfix fix bug2
+				
 			}
 
 		} catch (Exception e) {

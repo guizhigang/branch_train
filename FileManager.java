@@ -38,8 +38,13 @@ public class FileManager implements FileManagerConfig {
 
 			trackerClient = new TrackerClient();
 			trackerServer = trackerClient.getConnection();
+			//f1
+			trackerClient = new TrackerClient();
+			trackerServer = trackerClient.getConnection();
 
 			storageClient = new StorageClient(trackerServer, storageServer);
+
+			storageClient = new StorageClient(trackerServer, storageServer);			
 
 		} catch (Exception e) {
 			logger.error(logger, e);

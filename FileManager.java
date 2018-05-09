@@ -42,9 +42,11 @@ public class FileManager implements FileManagerConfig {
 			trackerClient = new TrackerClient();
 			trackerServer = trackerClient.getConnection();
 
-			storageClient = new StorageClient(trackerServer, storageServer);
+			String fdfsClientConfigFilePath = classPath + File.separator + CLIENT_CONFIG_FILE;
 
-			storageClient = new StorageClient(trackerServer, storageServer);			
+			if(){
+				
+			}
 
 		} catch (Exception e) {
 			logger.error(logger, e);
